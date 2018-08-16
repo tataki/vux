@@ -7,7 +7,7 @@
     <div class="weui-form-preview__bd">
       <div class="weui-form-preview__item" v-for="item in bodyItems">
         <label class="weui-form-preview__label">{{$t(item.label)}}</label>
-        <span class="weui-form-preview__value">{{$t(item.value)}}</span>
+        <span class="weui-form-preview__value" v-html="item.value" />
       </div>
     </div>
     <div class="weui-form-preview__ft">
